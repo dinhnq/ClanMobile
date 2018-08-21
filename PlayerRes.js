@@ -1,0 +1,4 @@
+handlers.ResourceGet = function(args) 
+{
+	
+}
