@@ -1,4 +1,9 @@
-handlers.UnitUpdate = function (args, context)
-{
-	
+handlers.UnitUpdateTest = function (args, context) {
+    var message = "Hello " + currentPlayerId + "!";
+    log.info(message);
+    var inputValue = null;
+    if (args && args.hasOwnProperty("inputValue"))
+        inputValue = args.inputValue;
+    log.debug("helloWorld:", { input: inputValue });
+    return { messageValue: message };
 };
