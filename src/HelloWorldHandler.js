@@ -7,4 +7,4 @@ handlers.helloWorld = function (args, context) {
         inputValue = args.inputValue;
     log.debug("helloWorld:", { input: inputValue });
     return { messageValue: message };
-}
+};
